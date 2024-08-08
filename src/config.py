@@ -10,16 +10,16 @@ class Settings(BaseSettings):
     BASE_KEYS: list[str] = Field(
         validation_alias='BASE_KEYS',
         default=[
-            'W32Zg5F7-V92mt68f-1dep203B',
-            'ka3E672R-1574KThz-nM40Jh15',
-            'L4or30z8-MA6w1y30-r0GP8f52',
-            '1r2JN79T-b1vm364s-B79N3g4l',
-            '9Z84YMf1-Ci731e5K-743NlOZ0',
-            'X3ZY91n5-S0at385w-170NF2ge',
-            'd9vT20K5-RL6I08W1-0X1zM48S',
-            '3fwe4E78-4ua83qA7-kP061T4t',
-            'm1Jdh478-1h63O5fo-1i8QR07U',
-            '5hD6f0W8-Xz08g43W-w43F1Ug2',
+            '6S5P3gn0-14e7O3UH-P3C8F51n',
+            '60F1U3oM-4Y2w8K1G-128AE6sy',
+            'C29u3T7F-53YB60rk-0y453JZj',
+            '6324VIUl-Ph0t3M52-981ZbpN0',
+            'zbP702S4-6Fe4H2z9-40pwoI37',
+            'e4LB5T32-594ZWT6q-2H4zfS73',
+            '65m4EI7k-4W5Vpq30-0zVtF643',
+            '6pT97C4s-2P7MCD45-ux90X58I',
+            '8Rw9LA63-07rWqp26-3lzk09F8',
+            'uQh6907W-9lrV6Z02-8Y4oT19I',
         ]
     )
     THREADS_COUNT: int = Field(validation_alias='THREADS_COUNT', default=1)
@@ -27,9 +27,9 @@ class Settings(BaseSettings):
     DEVICE_MODELS: list[str] = Field(validation_alias='DEVICE_MODELS', default=[])
     WEBHOOK_KEY_URL: str | None = Field(validation_alias='WEBHOOK_KEY_URL', default=None)
     SAVE_WIREGUARD_VARIABLES: bool = Field(validation_alias='SAVE_WIREGUARD_VARIABLES', default=False)
-    DELAY: int = Field(validation_alias='DELAY', default=25)
+    DELAY: int = Field(validation_alias='DELAY', default=40)
     OUTPUT_FILE: str = Field(validation_alias='OUTPUT_FILE', default='output.txt')
-    OUTPUT_FORMAT: str = Field(validation_alias='OUTPUT_FORMAT', default='{key} | {referral_count}')
+    OUTPUT_FORMAT: str = Field(validation_alias='OUTPUT_FORMAT', default='{key} | {referral_count} GB')
     RETRY_COUNT: int = Field(validation_alias='RETRY_COUNT', default=3)
 
 
